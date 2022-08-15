@@ -12,7 +12,7 @@ const Detail = () => {
         console.log(json);
     }
     useEffect(() => {
-       getMovie();
+       getMovie().then(r => console.log(r));
     }, []);
 
     return <h1>Detail</h1>
